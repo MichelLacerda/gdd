@@ -12,17 +12,27 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/godot" # the subpath of your site, e.g. /blog
-url: "http://michellacerda.com.br" # the base hostname & protocol for your site
+
+# Social Media
 twitter_username: michel_lacerda_
 github_username:  MichelLacerda
 
-# Build settings
+# Markdown
 markdown: kramdown
 
+# Other settings
 exclude: ['README.md', 'LICENSE']
+
+# i18n and encode
 timezone: America/Sao_Paulo
 encoding: utf-8
 
+# urlpatterns
+permalink: pretty
+baseurl: "/godot" # the subpath of your site, e.g. /blog
+url: "http://michellacerda.com.br" # the base hostname & protocol for your site
+
 # Post
-limit_posts: 10
+post_total: False
+paginate: 1
+paginate_path: "/posts/:num"
