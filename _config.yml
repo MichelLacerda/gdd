@@ -13,6 +13,9 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
+# Highlighter
+highlighter: pygments
+
 # Social Media
 twitter_username: michel_lacerda_
 github_username:  MichelLacerda
@@ -28,7 +31,7 @@ timezone: America/Sao_Paulo
 encoding: utf-8
 
 # urlpatterns
-permalink: pretty
+permalink: /post/:title
 baseurl: "/godot" # the subpath of your site, e.g. /blog
 url: "http://michellacerda.com.br" # the base hostname & protocol for your site
 
