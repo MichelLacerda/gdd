@@ -1,15 +1,29 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+{% assign post = page %}
 
-  <div class="post-content" itemprop="articleBody">
+<article>
+  <head>
+    <h1>{{ post.title }}</h1>
+    <h4><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></h4>
+  </head>
+
+  <div>
     {{ content }}
-  </div>
 
+    {% if post.category %}
+      {% for site_category in site.data.categories %}
+        {% if site_category.slug == post.category %}
+          {% assign category = site_category %}
+        {% endif %}
+      {% endfor %}
+      {% if category %}
+        {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="{{ site.baseurl }}/blog/category/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+      {% endif %}
+    {% else %}
+      {% assign category_content = '' %}
+    {% endif %}
+<p id="post-meta">Posted {{ category_content }}{{ tags_content }}</p>  </div>
 </article>
