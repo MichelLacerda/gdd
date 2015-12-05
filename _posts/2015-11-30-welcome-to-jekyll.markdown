@@ -3,7 +3,7 @@ layout: post
 title: 'Postagem #1'
 category: programming
 tags: [github, github-pages, jekyll]
-thumbnail_image: '/assets/img/thumb_post.jpg'
+thumbnail_image: 'thumb_post.jpg'
 ---
 É um fato conhecido de todos que um leitor se 
 distrairá com o conteúdo de texto legível de 
