@@ -2,26 +2,39 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    /*border-top: 16px solid #263238;*/
+    border-bottom: 5px solid #37474F;
     min-height: 56px;
-
+    background-color: #263238;
     // Positioning context for the mobile navigation icon
     position: relative;
+    padding: 10px 0;
+}
+
+.site-header a {
+    color: #FFF !important;
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 28px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
+    font-family: $base-font;
+    font-weight: 500;
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #FFFFFF;
     }
+}
+
+.headline {
+    font-size: 24px;
+    margin: 30px 0 30px 0;
+    font-family: $base-font;
+    font-weight: $base-font-weight-light-300;
+    color: #37474F;
 }
 
 .site-nav {
@@ -33,29 +46,37 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: #FFFFFF;
         line-height: $base-line-height;
-
+        font-weight: $base-font-weight-normal-400;
+        padding-bottom: 19px;
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
         }
     }
 
+    .page-link:hover {
+        border-bottom: 5px solid #546E7A;
+    }
+
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
+        top: 20px;
+        right: 0;
+        background-color: #263238 !important;
+        border-bottom: 5px solid #37474F;
+        /*
         background-color: $background-color;
         border: 1px solid $grey-color-light;
-        border-radius: 5px;
+        border-radius: 5px;*/
         text-align: right;
 
         .menu-icon {
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 56px;
             line-height: 0;
             padding-top: 10px;
             text-align: center;
@@ -100,6 +121,8 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: #FFFFFF !important;
+    border-top: 1px solid #CCCCCC; 
 }
 
 .footer-heading {
@@ -205,13 +228,118 @@
 
 
 /**
+ * Posts Featured
+ */
+
+.post-featured {
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.post-featured header {
+    width: 100%;
+}
+
+.post-featured header img {
+    width: 100%;
+    box-shadow: 0 4px 8px -2px gray;
+}
+
+.post-featured header .noimg {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-image: url(/godot/assets/img/thumb_no.jpg);
+    background-repeat: no-repeat;
+}
+
+.post-featured .post-featured-content {
+    background-color: #FFFFFF;
+    padding-bottom: 30px;
+}
+
+.post-featured .post-featured-content .title {
+    font-size: 21px;
+    line-height: 1.3em;
+    font-family: $base-font;
+    font-weight: $base-font-weight-medium-500;
+    padding: 30px 30px 0;
+    margin-bottom: 20px;
+}
+
+.post-featured .post-featured-content .meta {
+    font-size: 14px;
+    margin: 10px 30px  0;
+    font-family: $base-font;
+    font-weight: $base-font-weight-medium-500;
+    line-height: 1.3;
+    color: #7f7f7f;
+}
+
+.post-featured .post-featured-content p {
+    display: block;
+    display: -webkit-box;
+    font-family: $base-font;
+    color: #7f7f7f;
+    /*max-height: 54.6px;*/
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 30px 0;
+    max-width: 300px;
+}
+
+/**
  * Posts
  */
 .post-header {
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
+section article .post-title-featured {
+    font-size: 21px;
+    line-height: 1.3;
+    font-family: $base-font;
+    font-weight: $base-font-weight-medium-500;
+    padding: 30px 30px 0;
+    margin-bottom: 20px;
+}
+
+section article .post-meta {
+    font-size: 14px;
+    margin: 10px 30px  0;
+    font-family: $base-font;
+    font-weight: $base-font-weight-medium-500;
+    line-height: 1.3;
+    color: #7f7f7f;
+}
+
+section article p {
+    display: block;
+    display: -webkit-box;
+    font-family: $base-font;
+    color: #7f7f7f;
+    /*max-height: 54.6px;*/
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 30px 0;
+    max-width: 300px;
+}
+
+article .post-content {
+    background-color: #FFFFFF;
+}
+
+article .post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;

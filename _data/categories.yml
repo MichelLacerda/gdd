@@ -5,3 +5,7 @@
 - slug: programming
   name: Programming
   color: '#1abc9c'
+
+- slug: gdscrip
+  name: GDScrip
+  color: '#FF0000'

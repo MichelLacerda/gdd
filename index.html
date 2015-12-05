@@ -10,7 +10,8 @@ layout: default
         <span class="date">{{ post.date }}</span>
       </p>
       <div class="content">
-        {{ post.content }}
+        {% assign url = site.baseurl %}
+        {{ post.content | thumbnail_url: url, post.thumbnail_image, site.thumb_width, site.thumb_height }}
       </div>
     {% endfor %}
   </ul>

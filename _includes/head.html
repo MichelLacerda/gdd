@@ -11,6 +11,16 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="{{ site.favicon }}"/>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+  <!-- Open Graph -->
+  <meta content="{{ site.title }}" property="og:title">
+  <meta content="Michel Lacerda - Godot" property="og:site_name">
+  <meta content="Site dedicado ao motor de jogos - Godot Engine" property="og:description">
+  <meta content="{{ site.baseurl | prepend: site.url }}/" property="og:url">
+  <meta content="{{ site.baseurl | prepend: site.url }}/about/" property="article:author">
+  <meta content="{{ site.description }}" property="og:description">
+  <meta content="/img/srcset/{{ page.image }}" property="og:image">
+  <meta content="{{ category }}" property="article:section">
+   <meta content="{{ tag }}" property="article:tag">
 </head>

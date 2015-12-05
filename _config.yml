@@ -6,12 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Godot BR
+title: GODOT
 email: michellacerdasilva@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+favicon: '/godot/assets/img/favicon.png'
 
 # Highlighter
 highlighter: pygments
@@ -39,3 +40,5 @@ url: "http://michellacerda.com.br" # the base hostname & protocol for your site
 post_total: False
 paginate: 1
 paginate_path: "/posts/:num"
+thumb_width: 390px
+thumb_height: 300px

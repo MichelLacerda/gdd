@@ -1,4 +1,9 @@
 /**
+ * Google Fonts - Robot
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100,100italic);
+
+/**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -14,7 +19,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font !important;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -23,6 +28,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    background-color: #E6E6E6;
 }
 
 
@@ -91,16 +97,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
+    color: $link-color;
+    text-decoration: none !important;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $link-color-visited !important;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $link-color-hover !important;
+        text-decoration: none !important;
     }
 }
 
