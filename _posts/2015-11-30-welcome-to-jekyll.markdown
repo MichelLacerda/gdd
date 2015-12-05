@@ -5,21 +5,22 @@ category: programming
 tags: [github, github-pages, jekyll]
 thumbnail_image: '/assets/img/thumb_post.jpg'
 ---
-
-Programação
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+É um fato conhecido de todos que um leitor se 
+distrairá com o conteúdo de texto legível de 
+uma página quando estiver examinando sua diagramação. 
+A vantagem de usar Lorem Ipsum é que ele tem uma 
+distribuição normal de letras, ao contrário de 
+"Conteúdo aqui, conteúdo aqui", 
+fazendo com que ele tenha uma aparência 
+similar a de um texto legível. 
+Muitos softwares de publicação e 
+editores de páginas na internet agora usam Lorem 
+Ipsum como texto-modelo padrão, e uma rápida busca 
+por 'lorem ipsum' mostra vários websites ainda em 
+sua fase de construção. Várias versões novas 
+surgiram ao longo dos anos, eventualmente por 
+acidente, e às vezes de propósito 
+(injetando humor, e coisas do gênero).
 
 <p>{% youtube yNelgQ_3o1M %}</p>
 
