@@ -5,6 +5,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems:
+  - jekyll-sitemap
+  - thumbnail
+  - yt
+
 # Site settings
 title: GODOT
 email: michellacerdasilva@gmail.com
