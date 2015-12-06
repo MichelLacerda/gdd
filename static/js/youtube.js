@@ -10,7 +10,9 @@ $( document ).ready( function( ) {
     });
     
     if ( data ) {
-      data.replaceWith( embed( data.attr( 'data' ) ) );
+      $( data ).each(function( index ) {
+        $(this).replaceWith( embed( $(this).attr( 'data' ) ) )
+      });
     }
   })( $( 'em[id="youtube"]' ) );
 });
