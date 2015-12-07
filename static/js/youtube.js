@@ -1,5 +1,5 @@
 $( document ).ready( function( ) {
-  (function(data){
+  (function( data ){
     var embed = (function ( id ) {
       var begin_div = '<div class="embed-responsive embed-responsive-16by9">';
       var begin_iframe = '<iframe width="854" height="480" src="https://www.youtube.com/embed/' + id + '" frameborder="0" allowfullscreen>';
