@@ -33,11 +33,11 @@ encoding: utf-8
 
 # urlpatterns
 permalink: /post/:title
-baseurl: "/godot" # the subpath of your site, e.g. /blog
+baseurl: "/gd" # the subpath of your site, e.g. /blog
 url: "http://michellacerda.com.br" # the base hostname & protocol for your site
 static: /static/
 media: /media/
-favicon: /godot/media/favicon.png
+favicon: /gd/media/favicon.png
 
 # Post
 post_total: False
