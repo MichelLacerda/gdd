@@ -33,10 +33,12 @@ encoding: utf-8
 
 # urlpatterns
 permalink: /post/:title
-baseurl: "/gd" # the subpath of your site, e.g. /blog
-url: "http://michellacerda.com.br" # the base hostname & protocol for your site
+baseurl: "/gd"
+url: "http://michellacerda.com.br"
 static: /static/
-media: /media/
+media: /gd/media/
+post_image: /gd/media/post/images/
+post_thumb: /gd/media/post/thumbnail/
 favicon: /gd/media/favicon.png
 
 # Post
